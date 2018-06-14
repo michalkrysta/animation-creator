@@ -8,7 +8,7 @@ from media.name_generator import generate_name
 app = Flask(__name__)
 
 s3 = boto3.resource('s3')
-media_storage = S3MediaStorage(s3, os.getenv('APP_BUCKET_NAME'))
+media_storage = S3MediaStorage(s3, os.getenv('180760'))
 
 photos_list = []
 sqs = boto3.resource('sqs', region_name="eu-central-1")
